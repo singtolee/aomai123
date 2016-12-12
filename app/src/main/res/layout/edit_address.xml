@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.aomai123.aomai123.editAddress">
+    <LinearLayout
+        android:id="@+id/editAddressLayout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="6dp"
+            android:text="@string/hint_select_buildings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:padding="6dp"
+            android:id="@+id/spinner_building"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="6dp"
+            android:text="@string/hint_select_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <NumberPicker
+            android:id="@+id/numP_floor"
+            android:padding="6dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        </NumberPicker>
+        <EditText
+            android:id="@+id/room"
+            android:padding="6dp"
+            android:hint="@string/roomNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/company"
+            android:padding="6dp"
+            android:hint="@string/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/phone"
+            android:padding="6dp"
+            android:hint="@string/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/submitAdress"
+            android:text="@string/SubmitAddress"
+            style="@style/check_out" />
+        <Button
+            android:id="@+id/cancel_submitAdress"
+            android:text="@string/cancel_SubmitAddress"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

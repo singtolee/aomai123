@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.aomai123.aomai123.topUp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="K Bank 1234567890"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SCB Bank 1234567890"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bangkok Bank 1234567890"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CIMB Bank 1234567890"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UOB Bank 1234567890"/>
+        <Button
+            android:id="@+id/btnOpenGallary"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_add_a_photo_black_18dp"
+            android:text="@string/ChoosePic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imageBill"
+            android:src="@drawable/ic_crop_original_black_48dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+        <Button
+            android:id="@+id/btnuploadpic"
+            android:text="@string/UploadPic"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_cloud_upload_black_18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnreturn"
+            android:text="@string/GoBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fgme"
+    tools:context="com.aomai123.aomai123.fg_me">
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/fg_me_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:id="@+id/userName"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:text="@string/welcom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/userBalance"
+                    android:drawableLeft="@drawable/ic_account_balance_wallet_white_18dp"
+                    android:text="345B"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/userPoints"
+                    android:padding="4dp"
+                    android:drawableLeft="@drawable/ic_redeem_white_18dp"
+                    android:text="44"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:text="@string/meTopUp"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_loyalty_white_18dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/btntopup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnRefresh"
+                    android:textSize="10sp"
+                    android:drawableLeft="@drawable/ic_autorenew_white_18dp"
+                    android:text="@string/meRefresh"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="@string/meOrder"
+            android:textSize="10sp"
+            android:drawableLeft="@drawable/ic_assignment_black_18dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btnorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="@string/meAddress"
+            android:textSize="10sp"
+            android:drawableLeft="@drawable/ic_location_city_black_18dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btneditaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="@string/meHistory"
+            android:textSize="10sp"
+            android:drawableLeft="@drawable/ic_history_black_18dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btnhistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="@string/meSignOut"
+            android:textSize="10sp"
+            android:drawableLeft="@drawable/ic_exit_to_app_black_18dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btnlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goToLogin"
+        android:text="@string/goToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/goToRegister"
+        android:text="@string/goToRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcyvOrderToday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

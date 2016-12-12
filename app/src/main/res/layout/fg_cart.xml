@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.aomai123.aomai123.fg_cart">
+    <android.support.v7.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:text="@string/select_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/radioGroup_deliveryTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio12AM"
+                    android:textSize="12sp"
+                    android:text="@string/Eat_at_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio3PM"
+                    android:textSize="12sp"
+                    android:text="@string/Eat_at_3pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <TextView
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:text="@string/select_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/radioGroup_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio_cash"
+                    android:textSize="12sp"
+                    android:text="@string/Pay_at_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio_Balance"
+                    android:textSize="12sp"
+                    android:text="@string/use_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio_mix"
+                    android:textSize="12sp"
+                    android:text="@string/cash_and_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio_redeemPoints"
+                    android:textSize="12sp"
+                    android:text="@string/redeemPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <Button
+        style="@style/check_out"
+        android:id="@+id/checkout"
+        android:text="@string/checkout" />
+
+
+    <LinearLayout
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingRight="6dp"
+                android:textStyle="bold"
+                android:text="@string/item_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="0"
+                android:textStyle="bold"
+                android:id="@+id/item_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingRight="6dp"
+                android:textStyle="bold"
+                android:text="@string/totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:text="0"
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:text="@string/Thai_Baht_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listCarts"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

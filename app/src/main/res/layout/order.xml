@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/check_bill_btn"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="3"
+            android:textSize="10dp"
+            android:padding="4dp"
+            android:id="@+id/dt"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="10dp"
+            android:layout_weight="2"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:id="@+id/orderTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="10dp"
+            android:layout_weight="2"
+            android:textStyle="bold|italic"
+            android:id="@+id/orderOutstanding"
+            android:textColor="@color/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/orderStatus"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/ic_remove_shopping_cart_white_18dp"
+            android:id="@+id/btnCancelOrder"
+            android:text="@string/Cancel"
+            android:clickable="true"
+            android:textSize="10sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="2dp"
+            android:id="@+id/orderProduct"
+            android:textSize="8sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black">
+        </View>
+    </LinearLayout>
+
+
+</LinearLayout>

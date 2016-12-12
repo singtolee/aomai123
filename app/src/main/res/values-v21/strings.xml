@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="checkout">checkout</string>
+    <string name="Eat_at_12">For lunch,will be delivered around 12:00.</string>
+    <string name="Eat_at_3pm">For afternoon break, will be delivered around 15:00.</string>
+    <string name="Pay_at_delivery">Cash on delivery</string>
+    <string name="use_balance">Use Balance</string>
+    <string name="select_time">Select delivery time:</string>
+    <string name="select_payment">Select payment mode:</string>
+    <string name="item_num">Items:</string>
+    <string name="totalAmount">Total:</string>
+    <string name="cash_and_balance">Balance + cash</string>
+    <string name="multiply_sign">*</string>
+    <string name="name_place_holder">Name:</string>
+    <string name="Balance_text">Balance:</string>
+    <string name="Creidt_text">Points</string>
+    <string name="Points_text">Points:</string>
+    <string name="welcom_text">Welcom</string>
+    <string name="goToRegister">Go to Register</string>
+    <string name="goToLogin">Go to Login</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="hint_fname">Firstname</string>
+    <string name="hint_lname">Last name</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_link_to_login">Go to Login</string>
+    <string name="btn_link_to_store">go back to store</string>
+    <string name="registering">Registering............</string>
+    <string name="logOut">Logout</string>
+    <string name="topupBalance">Top up</string>
+    <string name="goToEditAddress">Edit your address</string>
+    <string name="floor">Which floor?</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="name_price_backgroud">#BBF6DC</color>
+    <color name="add_cart_button">#E5495E</color>
+    <color name="price">#CB2402</color>
+    <color name="THB">#FFDF00</color>
+    <color name="check_bill_btn">#bbfadc</color>
+    <color name="cart_bg">#fff</color>
+    <color name="white">#fff</color>
+    <color name="fg_me_bg">#FF69B4</color>
+</resources>
